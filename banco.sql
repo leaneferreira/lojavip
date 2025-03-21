@@ -1,6 +1,6 @@
-create database lojavip;
+create database lojapc;
 
-use lojavip;
+use lojapc;
 
 create table funcionarios(
 id int identity (1,1),
@@ -14,7 +14,7 @@ primary key (id)
 select * from funcionarios;
 
 insert into funcionarios (nome, funcao, salario, cargahoraria)
-values ('leane', 'gerente', '15.000,00' , 'home officie') , ('amanda' , 'desing', '5.000,00', 'home officie') , ('juliana', 'estilista', '7.500,00', 'home officie');
+values ('wasd', 'gerente', '15.000,00' , 'home officie') , ('pedro' , 'analista', '9.000,00', 'home officie') , ('joao', 'rh', '9.800,00', 'home officie');
 
 ---------------------------------------------
 create table estoque(
@@ -29,7 +29,7 @@ primary key (id)
 select * from estoque;
 
 insert into estoque (produto, valor, quantidade, armazen)
-values ('sapato', '5.000,00' , '1', 'a' ) , ('bolsa', '17,000,00' , '5' , 'b' ) , ('cinto', '102,00' , '2', 'b' ), ('chapeu', '518,00' , '2', 'b' ), ('saia', '902,00' , '1', 'b' );
+values ('pc', '9.000,00' , '1', 'a' ) , ('teclado', '1,000,00' , '10' , 'b' ) , ('mouse', '102,00' , '1', 'b' ), ('cadeira', '5.000,00' , '4', 'b' ), ('mesa', '102,00' , '1', 'b' );
 
 ------------------------------------------
 create table cliente(
@@ -42,4 +42,4 @@ primary key (id)
 select * from cliente;
 
 insert into cliente (nome,valordacompra)
-values ('leticia', '5.000,00') , ('julia' , '17.000,00') , ('raquel', '120,00');
+values ('fulano', '6.000,00') , ('ciclano' , '21.000,00') , ('abcd', '100,00');
